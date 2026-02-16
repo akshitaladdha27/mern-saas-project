@@ -14,7 +14,7 @@ Built using **Next.js + Tailwind CSS**.
 
 ---
 
-# 🛠 Tech Stack
+# Tech Stack
 
 * Next.js (App Router)
 * React

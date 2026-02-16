@@ -31,7 +31,7 @@ export default function Hero() {
           Download Template
         </button>
 
-        <div className="relative bg-[#0F1117] rounded-[40px] mt-14 ml-15 p-10 w-275 shadow-[0_40px_120px_rgba(0,0,0,0.6)]">
+        <div className="relative bg-[#0F1117] rounded-[40px] mt-14 mx-15 p-10 w-275 shadow-[0_40px_120px_rgba(0,0,0,0.6)]">
 
           <div className="grid grid-cols-3 gap-8">
 
