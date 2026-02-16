@@ -1,36 +1,202 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SaaS Landing + Dashboard (Next.js)
 
-## Getting Started
+A full-featured frontend project built for a MERN Frontend Shortlisting Assignment.
 
-First, run the development server:
+This project includes:
+
+* Pixel-close SaaS landing page (Figma-based)
+* Authentication system (fake token-based)
+* Dashboard with real API integration
+* Settings with theme persistence
+* Fully responsive UI
+
+Built using **Next.js + Tailwind CSS**.
+
+---
+
+# 🛠 Tech Stack
+
+* Next.js (App Router)
+* React
+* Tailwind CSS
+* JSONPlaceholder API
+* localStorage (for auth + theme persistence)
+
+---
+
+# Setup Instructions
+
+## 1️ Clone the repository
+
+```bash
+git clone https://github.com/your-username/saas-dashboard.git
+cd saas-dashboard
+```
+
+## 2️ Install dependencies
+
+```bash
+npm install
+```
+
+## 3️ Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# Features Checklist
 
-To learn more about Next.js, take a look at the following resources:
+## Part A – Landing Page (Figma Match)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* [x] Pixel-close layout
+* [x] Correct spacing & typography
+* [x] Section order matches design
+* [x] Button styles & cards
+* [x] Hover + focus states
+* [x] Responsive design
+* [x] No horizontal overflow
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Part B – Authentication
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* [x] /login page
+* [x] /signup page
+* [x] Fake auth using localStorage
+* [x] Protected dashboard routes
+* [x] Logout clears token
+* [x] Dynamic navbar (Login / Dashboard / Logout)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Part C – Dashboard (API Integration)
+
+### Dashboard Summary
+
+* [x] Total users count
+* [x] Status cards
+* [x] Loading state
+
+### Users Page
+
+* [x] API integration
+* [x] List view
+* [x] Search (name/email)
+* [x] Sort (A–Z / Z–A)
+* [x] Client-side pagination
+* [x] User detail modal
+* [x] Loading + error states
+* [x] Empty state handling
+
+### Settings Page
+
+* [x] Profile form
+* [x] Theme toggle (light/dark)
+* [x] Settings persisted in localStorage
+
+---
+
+# Project Structure
+
+```
+app/
+  page.tsx
+  login/
+  signup/
+  dashboard/
+    layout.tsx
+    page.tsx
+    users/
+      page.tsx
+    settings/
+      page.tsx
+
+components/
+  landing/
+  ProtectedRoute.tsx
+```
+
+---
+
+# Key Decisions & Tradeoffs
+
+### 1️ Next.js App Router
+
+Used for:
+
+* Clean routing
+* Shared layouts
+* Production-ready structure
+
+---
+
+### 2️ Fake Authentication
+
+Used localStorage token to:
+
+* Simulate authentication
+* Protect routes
+
+Tradeoff:
+Not production secure (demo purpose only).
+
+---
+
+### 3️ Client-side Pagination
+
+Implemented on frontend because JSONPlaceholder does not provide full pagination logic.
+
+---
+
+### 4️ Theme Persistence
+
+Theme and profile data stored in localStorage for simplicity and speed.
+
+---
+
+# Accessibility & UX
+
+* Semantic HTML elements
+* Keyboard accessible forms
+* Visible focus states
+* Responsive design
+* Loading and error handling
+
+---
+
+# Future Improvements
+
+* Server-side authentication
+* Backend-based pagination
+* Role-based access control
+* Skeleton loaders
+* Unit testing
+
+---
+
+# Conclusion
+
+This project demonstrates:
+
+* Figma-to-code accuracy
+* Clean architecture
+* API integration
+* State management
+* Responsive UI
+* Scalable folder structure
+
+---
+
+## Author
+
+Your Name
+GitHub: [https://github.com/your-username](https://github.com/your-username)
