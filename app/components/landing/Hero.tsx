@@ -18,7 +18,7 @@ export default function Hero() {
 
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[150%] h-175 bg-linear-to-b from-purple-900/20 to-transparent rounded-[50%] blur-3xl pointer-events-none" />
       
-      <div className="container mt-13 font-[Manrope] px-6 relative z-10 text-center">
+      <div className="container mt-13  px-6 relative z-10 text-center">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-[1.1]">
           Beautiful Landing Page <br /> Design for You
         </h1>
@@ -31,53 +31,102 @@ export default function Hero() {
           Download Template
         </button>
 
-        <div className="relative bg-[#0F1117] rounded-[40px] mt-14 mx-15 p-10 w-275 shadow-[0_40px_120px_rgba(0,0,0,0.6)]">
+        <div className="relative bg-[#0F1117] rounded-[40px] mt-14 mx-auto p-8 w-full max-w-5xl shadow-[0_40px_120px_rgba(0,0,0,0.6)]">
 
-          <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-3 gap-6">
 
-            <div className="bg-[#1A1D25] rounded-3xl p-6 h-105 flex flex-col justify-between">
-              <div className="space-y-4">
-                {[1,2,3,4,5].map((i) => (
-                  <div key={i} className="h-3 bg-white/10 rounded"></div>
-                ))}
-              </div>
+          <div className="bg-[#1A1D25] rounded-3xl p-8 h-96 flex flex-col justify-between">
 
-              <div className="flex justify-center">
-                <div className="w-16 h-16 bg-pink-400 rounded-full"></div>
+            <div className="flex justify-center">
+              <div className="w-12 h-12 rounded-xl bg-linear-to-br from-pink-400 to-purple-500 flex items-center justify-center">
+                <div className="w-6 h-6 bg-black rounded-md"></div>
               </div>
             </div>
 
-            <div className="bg-[#1A1D25] rounded-3xl p-6 h-50 flex items-center justify-center">
-              <div className="w-28 h-28 rounded-full border-8 border-pink-400 border-r-purple-500 border-b-purple-500 border-l-pink-400"></div>
-            </div>
-
-            <div className="bg-[#1A1D25] rounded-3xl p-6 h-105 space-y-6">
-              {[1,2,3].map((i) => (
-                <div key={i} className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-yellow-400 rounded-full"></div>
-                  <div className="flex-1 space-y-2">
-                    <div className="h-3 bg-white/10 rounded"></div>
-                    <div className="h-3 bg-white/5 rounded w-2/3"></div>
-                  </div>
+            <div className="space-y-4 mt-6">
+              {[1,2,3,4,5].map((i) => (
+                <div key={i} className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-white/20 rounded-sm"></div>
+                  <div className="flex-1 h-3 bg-white/10 rounded"></div>
                 </div>
               ))}
             </div>
 
-            <div className="bg-[#1A1D25] rounded-3xl p-6 h-50 flex items-end gap-4 col-span-2">
-              {[20,40,60,80,100].map((h,i) => (
-                <div
-                  key={i}
-                  className="w-6 rounded-full bg-linear-to-t from-pink-400 to-purple-500"
-                  style={{ height: `${h}px` }}
-                ></div>
-              ))}
+            <div className="flex flex-col items-center mt-6">
+              <div className="w-14 h-14 rounded-full bg-linear-to-tr from-pink-400 to-purple-500 p-0.5">
+                <div className="w-full h-full bg-[#1A1D25] rounded-full"></div>
+              </div>
+              <div className="h-3 bg-white/10 rounded w-24 mt-4"></div>
+              <div className="h-3 bg-white/5 rounded w-16 mt-2"></div>
             </div>
-
-            <div className="bg-[#1A1D25] rounded-3xl h-50"></div>
 
           </div>
 
+
+          <div className="bg-[#1A1D25] rounded-3xl p-8 h-80 flex flex-col items-center justify-center relative">
+
+            <div className="absolute top-6 left-6 right-6 flex justify-between">
+              <div className="space-y-2">
+                <div className="h-2 w-20 bg-white/10 rounded"></div>
+                <div className="h-2 w-14 bg-white/5 rounded"></div>
+              </div>
+              <div className="w-4 h-4 bg-white/10 rounded"></div>
+            </div>
+
+  
+            <div className="w-40 h-40 rounded-full border-10 border-white/10 flex items-center justify-center relative">
+
+    
+            <div className="absolute w-40 h-40 rounded-full border-10 border-transparent 
+            border-t-pink-400 border-r-purple-500 rotate-45"></div>
+
+            <div className="w-20 h-20 bg-[#1A1D25] rounded-full"></div>
+          </div>
+
         </div>
+
+
+        <div className="bg-[#1A1D25] rounded-3xl p-8 h-96 space-y-6">
+
+          <div className="flex justify-between items-center">
+            <div className="space-y-2">
+              <div className="h-2 w-20 bg-white/10 rounded"></div>
+              <div className="h-2 w-14 bg-white/5 rounded"></div>
+            </div>
+            <div className="w-4 h-4 bg-white/10 rounded"></div>
+          </div>
+
+          {[1,2,3].map((i) => (
+            <div key={i} className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-linear-to-tr from-pink-400 to-purple-500 p-0.5">
+                <div className="w-full h-full bg-[#1A1D25] rounded-full"></div>
+              </div>
+              <div className="flex-1 space-y-2">
+                <div className="h-3 bg-white/10 rounded"></div>
+                <div className="h-3 bg-white/5 rounded w-2/3"></div>
+              </div>
+            </div>
+          ))}
+
+        </div>
+
+
+          <div className="bg-[#1A1D25] rounded-3xl p-6 h-48 flex items-end gap-4 col-span-2">
+            {[20,40,60,80,100].map((h,i) => (
+              <div
+                key={i}
+                className="w-5 rounded-full bg-linear-to-t from-pink-400 to-purple-500"
+                style={{ height: `${h}px` }}
+              ></div>
+            ))}
+          </div>
+
+          <div className="bg-[#1A1D25] rounded-3xl h-48"></div>
+
+        </div>
+
+      </div>
+
 
       </div>
 
